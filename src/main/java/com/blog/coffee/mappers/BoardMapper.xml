@@ -4,19 +4,28 @@
 <mapper namespace="com.blog.coffee.mappers.BoardMapper">
 	<!-- 게시글 작성 -->
 	<insert id="boardInsert" parameterType="Board">
-		insert into board value()
+		insert into board values(#{},#{},#{},#{},#{},#{},#{},#{},#{},#{})
 	</insert>
 	
 	<!-- 게시글 목록 -->
-	<select id="boardList" parameterType="Board">
+	<select id="boardList" resultType="Board">
+		
+	</select>
+	
+	<!-- 게시글 읽기 -->
+	<select id="boardRead" resultType="Board">
 		
 	</select>
 	
 	<!-- 게시글 수정 -->
+	<update id="boardUpdate" parameterType="Board">
+		
+	</update>
 	
-	
-	
-	
+	<!-- 게시글 삭제 -->
+	<delete id="boardDelete">
+		delete from board where bdNum=#{bdNum}
+	</delete>
 	
 	
 
