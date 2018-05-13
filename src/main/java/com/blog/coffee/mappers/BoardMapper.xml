@@ -4,7 +4,7 @@
 <mapper namespace="com.blog.coffee.mappers.BoardMapper">
 	<!-- 게시글 작성 -->
 	<insert id="boardInsert" parameterType="Board">
-		insert into board values(#{},#{},#{},#{},#{},#{},#{},#{},#{},#{})
+		insert into board values(<!-- #{},#{},#{},#{},#{},#{},#{},#{},#{},#{} -->)
 	</insert>
 	
 	<!-- 게시글 목록 -->
