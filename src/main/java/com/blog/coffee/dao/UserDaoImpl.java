@@ -1,5 +1,24 @@
 package com.blog.coffee.dao;
 
-public class UserDaoImpl {
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.blog.coffee.User;
+import com.blog.coffee.mappers.UserMapper;
+
+public class UserDaoImpl implements UserDao {
+	
+	@Autowired
+	SqlSession session;
+
+	@Override
+	public User userLogin(User user) {
+		return session.getMapper(UserMapper.class).userLogin(user);
+	}
+
+	@Override
+	public User loginIdcheck(User user) {
+		return session.getMapper(UserMapper.class).loginIdcheck(user);
+	}
 
 }

@@ -10,5 +10,16 @@
 		insert into user (#{userId},#{userPw},#{userName},
 		#{userSname},#{userEmail})
 	</insert>
+	
+	<!-- Login -->
+	<select id="userlogin" parameterType="User" resultType="User">
+		select * from user userId=#{userId} and userPw=#{userPw}
+	</select>
+	
+	
+	<!-- Login id Check -->
+	<select id="loginIdcheck" parameterType="User" resultType="User">
+		select * from user where userId=#{userId}
+	</select>
 
 </mapper>

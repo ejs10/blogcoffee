@@ -40,26 +40,12 @@
                                             <p class="form-control-static">email@example.com</p>
                                         </div>
                                         <div class="form-group">
-                                            <label>File input</label>
-                                            <input type="file">
-                                        </div>
-                                        <div class="form-group">
                                             <label>Text area</label>
-                                            <textarea class="form-control" rows="3"></textarea>
+                                            <textarea class="form-control" rows="36"></textarea>
                                         </div>
                                         <div class="form-group">
                                             <label>Selects</label>
                                             <select class="form-control">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Multiple Selects</label>
-                                            <select multiple class="form-control">
                                                 <option>1</option>
                                                 <option>2</option>
                                                 <option>3</option>
