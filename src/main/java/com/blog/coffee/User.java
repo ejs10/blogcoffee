@@ -3,13 +3,13 @@ package com.blog.coffee;
 import java.util.Date;
 
 public class User {
-	private String userId;
-	private String userPw;
-	private String userName;
-	private String userSname;
-	private String userEmail;
-	private int userLevel;
-	private Date regDate;
+	private String userId; //유저아이디
+	private String userPw; //유저비번
+	private String userName; //유저이름
+	private String userSname; //닉네임
+	private String userEmail; //이메일
+	private int userLevel; //유저레벨
+	private Date regDate; //가입일
 	
 	
 	public String getUserId() {

@@ -4,6 +4,9 @@ import com.blog.coffee.User;
 
 public interface UserMapper {
 	
+	//join
+	public int userJoin(User user);
+	
 	//login
 	public User userLogin(User user);
 	

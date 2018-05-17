@@ -6,7 +6,7 @@
 		select now()
 	</select>
 	
-	<insert id="userInsert" parameterType="User">
+	<insert id="userJoin" parameterType="User">
 		insert into user (#{userId},#{userPw},#{userName},
 		#{userSname},#{userEmail})
 	</insert>
