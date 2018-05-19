@@ -1,6 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html >
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+
+	<div id="header">
+		<ul>
+			<c:choose>
+				<c:when test="${user == null} ">
+					
+				</c:when>
+			</c:choose>
+		</ul>
+	</div>
+
+
+
+
+<!-- <!DOCTYPE html >
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -11,8 +27,8 @@
 </head>
 <body>
 	
-	<!-- Navbar
-      ================================================== -->
+	Navbar
+      ==================================================
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarColor03" aria-label="Toggle navigation" type="button" data-target="#navbarColor03" data-toggle="collapse">
@@ -44,4 +60,4 @@
 
 
 </body>
-</html>
+</html> -->

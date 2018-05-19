@@ -26,12 +26,16 @@
                                 <div class="col-lg-6">
                                     <form role="form" method="post">
                                         <div class="form-group">
-                                            <label>title</label>
+                                            <label>제목</label>
                                             <input class="form-control" name="bdTitle" placeholder="Enter text">
                                         </div>
                                         <div class="form-group">
-                                            <label>Text area</label>
-                                            <textarea class="form-control" rows="36"></textarea>
+                                            <label>내용</label>
+                                            <textarea name="bdContent" class="form-control" rows="20"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                        	<label>작성자</label>
+                                        	<input class="form-control" name="userSname">
                                         </div>
                                         <button type="submit" class="btn btn-default">Submit Button</button>
                                         <button type="reset" class="btn btn-default">Reset Button</button>
